@@ -1,0 +1,6 @@
+cluster-name= ""
+aws_region= ""
+access_key = "<Access Key>"
+secret_key = "<Secret Key>"
+inst-type= ""
+num-workers= ""
