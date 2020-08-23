@@ -1,0 +1,22 @@
+version: '3'
+services:
+  db:
+   container_name: mysql-db
+   image: mysql:5.5
+   ports:
+     - "3306:3306"
+   environment:
+     MYSQL_ROOT_PASSWORD: password
+   networks:
+     - net
+  app:
+    container_name: mediawiki-app
+    image: mediawiki
+    ports:
+     - "4000:80"
+    networks:
+      - net 
+networks:
+  net: 
+   
+
